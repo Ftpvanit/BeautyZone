@@ -1,0 +1,50 @@
+.input {
+  color: var(--color-primary-white);
+
+  &__label {
+    padding: 18px 33px;
+    font-size: 13px;
+    line-height: 1.1;
+    width: 225px;
+    border: 2px solid var(--color-secondary-light-gray);
+    border-radius: 32px;
+    background-color: transparent;
+  }
+
+  &__label:focus {
+    background-color: var(--color-secondary-light-gray);
+    outline: none;
+  }
+
+  &__label::placeholder {
+    color: var(--color-primary-white);
+    font-size: 13px;
+    line-height: 1.1;
+  }
+
+  &__field {
+    padding: 18px 33px;
+    font-size: 13px;
+    line-height: 1.1;
+    width: 235px;
+    border: 2px solid var(--color-secondary-light-gray);
+    border-radius: 32px;
+    background-color: transparent;
+
+    @media screen and (max-width: $bp-mobile) {
+      padding: 16px 24px;
+      width: 192px;
+    }
+  }
+
+  &__field:focus {
+    background-color: var(--color-secondary-light-gray);
+    outline: none;
+  }
+
+  &__field::placeholder {
+    color: var(--color-primary-white);
+    font-size: 13px;
+    line-height: 1.1;
+  }
+}

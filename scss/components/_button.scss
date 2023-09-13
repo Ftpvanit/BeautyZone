@@ -1,0 +1,40 @@
+.button {
+  padding: 16px 32px;
+  color: var(--color-primary-white);
+  font-weight: 600;
+  font-size: 18px;
+  background-color: var(--color-primary-blue);
+  border: 2px solid var(--color-primary-blue);
+  border-radius: 32px;
+  cursor: pointer;
+
+  &:hover {
+    transition: color 0.2s;
+    color: var(--color-primary-dark-blue);
+    background-color: transparent;
+  }
+}
+
+.button-white {
+  padding: 16px 32px;
+  color: var(--color-primary-white);
+  font-weight: 600;
+  font-size: 18px;
+  background-color: var(--color-primary-blue);
+  border: 2px solid var(--color-primary-blue);
+  border-radius: 32px;
+  cursor: pointer;
+
+  @media screen and (max-width: $bp-mobile) {
+    font-size: 16px;
+    padding: 14px 20px;
+    border-radius: 24px;
+    margin-left: 10px;
+  }
+
+  &:hover {
+    transition: color 0.2s;
+    color: var(--color-primary-blue);
+    background-color: transparent;
+  }
+}

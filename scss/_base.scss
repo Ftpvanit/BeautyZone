@@ -1,0 +1,44 @@
+body {
+  color: var(--color-primary-dark-blue);
+  font-family: 'Play', 'Roboto';
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.7;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1288px;
+  overflow: hidden;
+}
+
+.swiper-container {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}

@@ -1,0 +1,23 @@
+@keyframes stars-rotate {
+  to {
+    transform: rotate(1turn);
+  }
+
+  from {
+    transform: rotate(0.5turn);
+  }
+}
+
+@keyframes stars-scale {
+  from {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

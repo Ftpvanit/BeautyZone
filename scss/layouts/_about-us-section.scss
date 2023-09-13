@@ -1,0 +1,133 @@
+.about-us {
+  &__container {
+    position: relative;
+    display: flex;
+    gap: 36px;
+
+    @media screen and (max-width: $bp-mobile) {
+      padding-top: 8px;
+      gap: 0;
+      display: block;
+    }
+  }
+
+  &__content {
+    padding-left: 100px;
+
+    @media screen and (max-width: $bp-mobile) {
+      padding-left: 10%;
+    }
+  }
+
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    padding-bottom: 40px;
+    margin: 0;
+    max-width: 500px;
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 32px;
+      font-weight: 700;
+      max-width: 258px;
+      margin-right: 0;
+    }
+  }
+
+  &__text {
+    max-width: 709px;
+    margin: 0;
+
+    &:nth-child(4) {
+      padding-top: 40px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 18px;
+      max-width: 298px;
+
+      &:nth-child(4) {
+        padding-top: 18px;
+      }
+
+      &:nth-child(5) {
+        max-width: 304px;
+      }
+    }
+  }
+
+  &__photos {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @media screen and (max-width: $bp-mobile) {
+      display: none;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__photo {
+    border-radius: 50%;
+    width: 335px;
+    height: 328px;
+  }
+
+  &__photo:last-child {
+    margin-left: 200px;
+    padding-top: 40px;
+  }
+
+  &__small-star,
+  &__medium-star,
+  &__large-star {
+    position: absolute;
+    animation-name: stars-rotate, stars-scale;
+    animation-delay: 1s;
+  }
+
+  &__medium-star {
+    left: 450px;
+    padding-top: 32px;
+    padding-right: 73px;
+    animation-duration: 1.5s;
+  }
+
+  &__small-star {
+    left: 441px;
+    padding-top: 269px;
+    animation-duration: 1s;
+  }
+
+  &__large-star {
+    left: 174px;
+    padding-top: 335px;
+    animation-duration: 2s;
+  }
+
+  &__large-star-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    transform: rotate(-30deg);
+
+    @media screen and (max-width: $bp-mobile) {
+      display: flex;
+      position: absolute;
+      right: 0;
+      padding-right: 22px;
+      padding-top: 8px;
+    }
+
+    @media screen and (max-width: $bp-tablet) {
+      display: flex;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      padding-right: 16px;
+    }
+  }
+}

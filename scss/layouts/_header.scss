@@ -1,0 +1,114 @@
+.header {
+  background-image: linear-gradient(
+      94deg,
+      #fff 9.65%,
+      rgba(255, 255, 255, 0.85) 26.08%,
+      rgba(255, 255, 255, 0.19) 52.74%,
+      rgba(255, 255, 255, 0) 74.46%
+    ),
+    url(/genius-homework-4/img/hero-section-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-shrink: 0;
+  padding-bottom: 190px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        38deg,
+        #fff 0%,
+        rgba(255, 255, 255, 0.78) 31.23%,
+        rgba(255, 255, 255, 0.2) 50.39%,
+        rgba(255, 255, 255, 0) 68.37%
+      ),
+      url(/genius-homework-4/img/header-background-mobile.png);
+    padding-bottom: 56px;
+  }
+
+  &__blur {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(5px);
+
+    @media screen and (max-width: $bp-tablet) {
+      background: none;
+      backdrop-filter: blur(0.1px);
+    }
+  }
+
+  &__container {
+    padding: 18px 42px;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 16px 8px 24px 8px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__logo {
+    width: 74px;
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 57px;
+      padding: 15px 20px;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 56px;
+    flex-grow: 1;
+    justify-content: center;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--color-primary-dark-blue);
+    transition: color 0.2s;
+  }
+
+  &__link:hover {
+    text-decoration: none;
+    color: var(--color-primary-blue);
+  }
+
+  &__icons {
+    display: flex;
+    gap: 32px;
+    padding-top: 16px;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__icon:hover {
+    fill: var(--color-primary-blue);
+    cursor: pointer;
+  }
+
+  &__burger {
+    display: none;
+
+    @media screen and (max-width: $bp-tablet) {
+      display: block;
+      background-color: transparent;
+      border: none;
+      fill: #fff;
+    }
+  }
+}

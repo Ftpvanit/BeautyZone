@@ -1,0 +1,30 @@
+.our-procedures {
+  &__title {
+    font-size: 64px;
+    font-weight: 700;
+    padding-bottom: 48px;
+    text-align: center;
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 32px;
+      padding-bottom: 24px;
+      margin: 0;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 96px;
+
+    @media screen and (max-width: $bp-mobile) {
+      padding-bottom: 40px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 16px;
+  }
+}

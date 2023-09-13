@@ -1,0 +1,85 @@
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 723px;
+  height: 100%;
+  max-height: 681px;
+  padding: 42px;
+  background-color: var(--color-primary-dark-blue);
+  background-image: url(../img/background-modal.png);
+  border-radius: 48px;
+  overflow-y: auto;
+
+  @media screen and (max-width: $bp-mobile) {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    top: 42px;
+    right: 42px;
+    padding: 0;
+    fill: transparent;
+    background-color: transparent;
+    border: transparent;
+    stroke: var(--color-primary-white);
+
+    @media screen and (max-width: $bp-mobile) {
+      margin: 0;
+      top: 25px;
+      right: 25px;
+      padding: 8px 16px;
+    }
+  }
+
+  &__head {
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 64px;
+    font-weight: 700;
+    max-width: 435px;
+    color: var(--color-primary-white);
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 32px;
+      padding-bottom: 20px;
+      padding-top: 40px;
+    }
+  }
+
+  &__text {
+    width: 274px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-primary-white);
+
+    @media screen and (max-width: $bp-mobile) {
+      font-size: 16px;
+      max-width: 190px;
+    }
+  }
+
+  &__field {
+    margin: 0 auto 16px;
+    text-align: center;
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto 8px;
+  }
+
+  &__terms {
+    color: var(--color-secondary-light-gray);
+    margin: 0 auto;
+    max-width: 213px;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
